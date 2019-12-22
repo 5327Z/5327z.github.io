@@ -43,6 +43,19 @@ main, #contact {
   color: #0077BE;
 }
 
+.bottom-margin {
+  margin-bottom: 1rem;
+}
+
+.ig-color {
+  background: linear-gradient(92deg, red 0%, blue 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center;
+  display: inline-block;
+}
+
 .red {
   color: #ED3A43;
 }
@@ -412,6 +425,71 @@ input:focus ~ .underline, textarea:focus ~ .underline {
   background: #0077BE;
   transition: 0.3s;
   left: 50%;
+}
+
+/* ====== */
+/* FOOTER */
+/* ====== */
+
+footer {
+  padding-top: 28px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-weight: bold;
+  padding-top: 7px;
+  color: white;
+}
+
+footer .col-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .text {
+    justify-content: flex-start;
+  }
+  
+  footer .icons {
+    justify-content: flex-end;
+  }
+}
+
+footer .yt {
+  color: red;
+}
+
+.fa-circle {
+  color: white;
+}
+
+.fa-instagram, .fa-youtube {
+  color: black;
+}
+
+.fa-stack  {
+  overflow: hidden;
+  clip-path: circle(1em);
+}
+
+.slide-up-effect span {
+  transition: 0.3s;
+}
+
+.slide-up-effect span:last-child {
+  transform: translateY(100%);
+}
+
+.slide-up-effect:hover span:first-child {
+  transform: translateY(-100%);
+}
+
+.slide-up-effect:hover span:last-child {
+  transform: translateY(0%);
 }
 
 /* ========== */
